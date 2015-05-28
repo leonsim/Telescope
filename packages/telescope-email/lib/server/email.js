@@ -47,7 +47,7 @@ Telescope.email.send = function(to, subject, html, text){
   // TODO: limit who can send emails
   // TODO: fix this error: Error: getaddrinfo ENOTFOUND
 
-  var from = Settings.get('defaultEmail', 'noreply@example.com');
+  var from = Settings.get('defaultEmail', 'service@youplus.im');
   var siteName = Settings.get('title', 'Telescope');
   subject = '['+siteName+'] '+subject;
 
