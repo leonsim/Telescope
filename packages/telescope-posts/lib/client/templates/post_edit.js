@@ -1,6 +1,9 @@
 Template.post_edit.helpers({
   postFields: function () {
     return Posts.simpleSchema().getEditableFields(Meteor.user());
+  },
+  is_admin: function() {
+    return Users.is.admin(Meteor.user());
   }
 });
 
