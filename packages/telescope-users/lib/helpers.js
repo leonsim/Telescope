@@ -29,7 +29,9 @@ Users.getDisplayName = function (user) {
   if (typeof user === "undefined") {
     return "";
   } else {
-    return (user.telescope && user.telescope.displayName) ? user.telescope.displayName : Users.getUserName(user);
+    var ans = (user.telescope && user.telescope.displayName) ? user.telescope.displayName : Users.getUserName(user);
+    ans += (user.telescope && user.telescope.room) ? '（' + user.telescope.room + '）' : '';
+    return ans;
   }
 };
 Users.helpers({getDisplayName: function () {return Users.getDisplayName(this);}});

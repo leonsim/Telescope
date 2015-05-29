@@ -22,6 +22,17 @@ Telescope.schemas.votes = new SimpleSchema({
  */
 Telescope.schemas.userData = new SimpleSchema({
   /**
+    Room Number
+  */
+  room: {
+    type: String,
+    optional: true,
+    required: true,
+    public: true,
+    editableBy: ["member", "admin"],
+  },
+
+  /**
     Bio (Markdown version)
   */
   bio: {
