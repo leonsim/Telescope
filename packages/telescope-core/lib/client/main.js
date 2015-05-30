@@ -14,7 +14,7 @@ Meteor.startup(function() {
     og: {}
   };
 
-  var title = Settings.get("title", "Telescope");
+  var title = Settings.get("title", "You＋趴一趴");
   if (!!Settings.get("tagline")) {
     title += ": "+Settings.get("tagline");
   }
