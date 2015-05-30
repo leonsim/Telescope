@@ -64,7 +64,7 @@ var getDefaultViewController = function () {
 Meteor.startup(function () {
   Posts.controllers.default = getDefaultViewController().extend({
     getTitle: function () {
-      var title = Settings.get('title', 'Telescope');
+      var title = Settings.get('title', 'You＋趴一趴');
       var tagline = Settings.get('tagline');
       var fullTitle = !!tagline ? title + ' – ' + tagline : title ;
       return fullTitle;

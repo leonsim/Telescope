@@ -48,7 +48,7 @@ Telescope.email.send = function(to, subject, html, text){
   // TODO: fix this error: Error: getaddrinfo ENOTFOUND
 
   var from = Settings.get('defaultEmail', 'service@youplus.im');
-  var siteName = Settings.get('title', 'Telescope');
+  var siteName = Settings.get('title', 'You＋趴一趴');
   subject = '['+siteName+'] '+subject;
 
   if (typeof text === 'undefined'){

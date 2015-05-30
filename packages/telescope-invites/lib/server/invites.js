@@ -60,7 +60,7 @@ Meteor.methods({
         });
       }
 
-      var communityName = Settings.get('title','Telescope'),
+      var communityName = Settings.get('title','You＋趴一趴'),
           emailSubject = 'You are invited to try '+communityName,
           emailProperties = {
             newUser : typeof user === 'undefined',
