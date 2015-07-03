@@ -63,7 +63,7 @@ getPostCategories = function (post) {
 };
 
 getCategoryUrl = function(slug){
-  return Telescope.utils.getSiteUrl()+'category/'+slug;
+  return (Telescope.utils.getSiteUrl()+'category/'+slug).replace(/^https?:\/\/[^\/]*/, '');
 };
 
 // add callback that adds categories CSS classes
